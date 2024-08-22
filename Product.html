@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Megamart</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+        <link href="assets/vendor/owl/owl.carousel.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+    </head>
+
+    <body>
+        <div class="main-content">
+            <div class="admin_header">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-3 text-center d-flex gap-2 align-items-center">
+                        <a role="button" class="border-0 cursor-pointer" onclick="sideBarToggle()">
+                            <i class="fa fa-bars text-white fs-4 fw-semibold mb-0 pb-0"></i>
+                        </a>
+                        <a class="logo d-flex gap-2 align-items-center" href="dashboard.html">
+                            <div class="logo-wrapper">
+                                <img src="./assets/img/main_logo.png" alt="" class="w-100 h-100">
+                            </div>
+                            <h5 class="fs-5 fw-semibold text-white mb-0 mt-2">Megamart</h5>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row ">
+                            <div class="col-auto pe-2 d-md-block d-none">
+                                <a class="language_change" href="javascript:;"><img
+                                        src="assets/img/saudi_arabia_img.png" alt="">Saudi Arabia</a>
+                            </div>
+                            <div class="col-auto d-flex align-items-center">
+                                <div class="dropdown Profile_dropdown">
+                                    <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/img/user.png" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="view-profile.html">View Profile</a></li>
+                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="toggle_btns">
+                                   <i class="fas fa-bars"></i>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin_main">
+                <div class="admin_siderbarr pt-2">
+                    <a class="sidebar-link" href="dashboard.html">
+                        <span><i class="fas fa-home"></i> </span>
+                        Dashboard
+                    </a>
+                    <a class="sidebar-link" href="users_management.html">
+                        <span><i class="fas fa-users"></i> </span>
+                        Users Management
+                    </a>
+                    <a class="sidebar-link" href="affiliate_management.html">
+                        <span><i class="fa-brands fa-affiliatetheme"></i></span>
+                        Affiliate Management
+                    </a>
+                    <a class="sidebar-link" href="orders_management.html">
+                        <span><i class="fa-brands fa-jedi-order"></i></span>
+                        Order Management
+                    </a>
+                    <a class="sidebar-link" href="Category_management.html">
+                        <span><i class="fa-solid fa-bag-shopping"></i></span>
+                        Category Management
+                    </a>
+                    <a class="sidebar-link" href="Filter_management.html">
+                        <span><i class="fa-solid fa-filter"></i></span>
+                        Filter Management
+                    </a>
+                    <a class="sidebar-link" href="survey_management.html">
+                        <span><i class="fa-solid fa-fire-flame-curved"></i></span>
+                        Survey Management
+                    </a>
+                    <a class="sidebar-link" href="Product.html">
+                        <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
+                        Products Management
+                    </a>
+                    <a class="sidebar-link" href="loyalty_program_management.html">
+                        <span><i class="fa fa-map-marked"></i></span>
+                        Loyalty Management
+                    </a>
+                    <a class="sidebar-link" href="membership_plan.html">
+                        <span><i class="fas fa-hand-holding-usd"></i></span>
+                        Membership Plan
+                    </a>
+                    <a class="sidebar-link" href="reports_management.html">
+                        <span><i class="fa fa-file"></i></span>
+                        Reports Management
+                    </a>
+                    <a class="sidebar-link" href="banner_management.html">
+                        <span class=""><i class="fa-solid fa-bars-progress"></i></span>
+                        Banner Management
+                    </a>
+                    <a class="sidebar-link" href="offer&gift_management.html">
+                        <span><i class="fa-solid fa-blog"></i></span>
+                        offer & gift management
+                    </a>
+                    <a class="sidebar-link" href="blog_management.html">
+                        <span class="">
+                            <i class="fa-brands fa-buffer"></i>
+                        </span>
+                        Blog Management
+                    </a>
+                    <a class="sidebar-link" href="beauty_tips_&_news_management.html">
+                        <span><i class="fa-brands fa-gratipay"></i></span>
+                        Beauty Tips & News
+                    </a>
+                    <a class="sidebar-link" href="inventory_management.html">
+                        <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                        Inventory Management
+                    </a>
+                    <a class="sidebar-link" href="payout_affiliate_management.html">
+                        <span><i class="fas fa-coins"></i></span>
+                        Pay-Out Affiliate
+                    </a>
+                    <a class="sidebar-link" href="refund_management.html">
+                        <span><i class="fa-solid fa-money-check-dollar"></i></span>
+                        Refund Management
+                    </a>
+                    <a class="sidebar-link" href="transaction_management.html">
+                        <span><i class="fas fa-sync-alt"></i></span>
+                        Transaction
+                    </a>
+                    <a class="sidebar-link" href="promo&coupon_management.html">
+                        <span><i class="fa-solid fa-ticket"></i></span>
+                        Promo & Coupon
+                    </a>
+                    <a class="sidebar-link" href="help&support.html">
+                        <span><i class="fas fa-headset"></i></span>
+                        Help & Support
+                    </a>
+                    <a class="sidebar-link" href="contact_management.html">
+                        <span><i class="fa fa-user-cog"></i></span>
+                        Content Management
+                    </a>
+                    <!-- <a class="sidebar-link" href="Product.html"><span><i class="fa-solid fa-shopping-cart"></i></span>Product</a> -->
+                    <a class="sidebar-link" href="login.html"><span><i class="fas fa-sign-out-alt"></i></span>
+                        Logout</a>
+                </div>
+                <div class="admin_contentpart">
+                    <div class="row">
+                        <div class="mb-4 w-100 justify-content-end d-flex flex-wrap">
+                            <a class="comman_btn  w-fit cursor-pointer" href="add_product.html">
+                                <i class="fa fa-plus"></i>
+                                Add Products
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white shadow common_border_radius">
+                                <div class="comman_table pt-md-3 pb-md-4 pb-3 px-md-3 px-2">
+                                    <div class="row align-items-center justify-content-between">
+                                        <div class="col-md-auto mb-md-0 mb-3">
+                                            <div class="headleft">
+                                                <h2>Product List
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 d-flex align-items-center justify-content-end">
+                                            <div class="searchh_box position-relative">
+                                                <input class="form-control" type="search" placeholder="Search">
+                                                <button><i class="fas fa-search"></i></button>
+                                            </div>
+                                            <div class="dropdown filterdropdown">
+                                                <button class="btn btn-secondary" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-filter"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <form class="form-design row mx-0" action="">
+                                                        <div class="col-12 form-group">
+                                                            <label for="">Year</label>
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected="">2001</option>
+                                                                <option value="1">2002</option>
+                                                                <option value="2">2003</option>
+                                                                <option value="2">2004</option>
+                                                                <option value="2">2005</option>
+                                                                <option value="2">2006</option>
+                                                                <option value="2">2007</option>
+                                                                <option value="2">2008</option>
+                                                                <option value="2">2009</option>
+                                                                <option value="2">2010</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12 form-group">
+                                                            <label for="">Months</label>
+                                                            <select class="form-select"
+                                                                aria-label="Default select example">
+                                                                <option selected="">Jan</option>
+                                                                <option value="1">Feb</option>
+                                                                <option value="2">Mar</option>
+                                                                <option value="2">Apr</option>
+                                                                <option value="2">May</option>
+                                                                <option value="2">Jun</option>
+                                                                <option value="2">July</option>
+                                                                <option value="2">August</option>
+                                                                <option value="2">Sep</option>
+                                                                <option value="2">Oct</option>
+                                                                <option value="2">Nov</option>
+                                                                <option value="2">Dec</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row comman_table pt-md-3 pb-md-4 pb-3 px-md-3 px-2">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover border-0">
+                                                <thead>
+                                                    <tr class="text-center">
+                                                        <th>Sr.</th>
+                                                        <th>Image</th>
+                                                        <th>Name</th>
+                                                        <th>Category</th>
+                                                        <th>Sub Category</th>
+                                                        <th>Sub Sub Category</th>
+                                                        <th>Quantity</th>
+                                                        <th>Price</th>
+                                                        <th>Discount</th>
+                                                        <th>Discounted Price</th>
+                                                        <th>origin</th>
+                                                        <th>Date</th>
+                                                        <th>Stock</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="text-center">
+                                                        <td>7712309</td>
+                                                        <td class="">
+                                                            <div class="d-flex w-100 justify-content-center">
+                                                                <div
+                                                                    class="w-fit h-fit py-1 px-1 bg-light rounded-3 overflow-hidden">
+                                                                    <img src="./assets/img/makeup.jpeg" alt=""
+                                                                        class="w-40p h-40p">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Yves Saint Laurent</td>
+                                                        <td>Beauty & Personal Care</t>
+                                                        <td>Body & Bath</t>
+                                                        <td>Bath & Shower</td>
+                                                        <td>1,638</td>
+                                                        <td>$1,452</td>
+                                                        <td>20%</td>
+                                                        <td>$1,161</td>
+                                                        <td>USA</td>
+                                                        <td>02-02-2024</td>
+                                                        <td>
+                                                            <a class="text-success fw-semibold fs-6">Available</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex w-100 justify-content-center">
+                                                                <a class="Table_btn me-2" href="products_view.html">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </a>
+                                                                <a class="Table_btn me-2 openEditModal"
+                                                                    href="edit_product.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <a class="bg-main-2 Table_btn">
+                                                                    <i class="fa fa-trash"></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>7712309</td>
+                                                        <td class="">
+                                                            <div class="d-flex w-100 justify-content-center">
+                                                                <div
+                                                                    class="w-fit h-fit py-1 px-1 bg-light rounded-3 overflow-hidden">
+                                                                    <img src="./assets/img/certificated.jpg" alt=""
+                                                                        class="w-40p h-40p">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Yves Saint Laurent</td>
+                                                        <td>Beauty & Personal Care</t>
+                                                        <td>Body & Bath</t>
+                                                        <td>Bath & Shower</td>
+                                                        <td>1,638</td>
+                                                        <td>$1,452</td>
+                                                        <td>20%</td>
+                                                        <td>$1,161</td>
+                                                        <td>USA</td>
+                                                        <td>02-02-2024</td>
+                                                        <td>
+                                                            <a class="text-success fw-semibold fs-6">Available</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex w-100 justify-content-center">
+                                                                <a class="Table_btn me-2" href="products_view.html">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </a>
+                                                                <a class="Table_btn me-2 openEditModal"
+                                                                    href="edit_product.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <a class="bg-main-2 Table_btn">
+                                                                    <i class="fa fa-trash"></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <td>7712309</td>
+                                                        <td class="">
+                                                            <div class="d-flex w-100 justify-content-center">
+                                                                <div
+                                                                    class="w-fit h-fit py-1 px-1 bg-light rounded-3 overflow-hidden">
+                                                                    <img src="./assets/img/certificated.jpg" alt=""
+                                                                        class="w-40p h-40p">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Yves Saint Laurent</td>
+                                                        <td>Beauty & Personal Care</t>
+                                                        <td>Body & Bath</t>
+                                                        <td>Bath & Shower</td>
+                                                        <td>1,638</td>
+                                                        <td>$1,452</td>
+                                                        <td>20%</td>
+                                                        <td>$1,161</td>
+                                                        <td>USA</td>
+                                                        <td>02-02-2024</td>
+                                                        <td>
+                                                            <a class="text-success fw-semibold fs-6">Available</a>
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex w-100 justify-content-center">
+                                                                <a class="Table_btn me-2" href="products_view.html">
+                                                                    <i class="fa fa-eye"></i>
+                                                                </a>
+                                                                <a class="Table_btn me-2 openEditModal"
+                                                                    href="edit_product.html">
+                                                                    <i class="fa fa-edit"></i>
+                                                                </a>
+                                                                <a class="bg-main-2 Table_btn">
+                                                                    <i class="fa fa-trash"></i>
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex justify-content-end w-100 mt-4 gap-2 pagination">
+                                            <div>
+                                                <a href="" class="">
+                                                    <i class="fa fa-arrow-left"></i>
+                                                </a>
+                                            </div>
+                                            <div class="light-page">
+                                                <a href="" class="">1</a>
+                                            </div>
+                                            <div class="light-page">
+                                                <a href="" class="">2</a>
+                                            </div>
+                                            <div class="light-page">
+                                                <a href="" class="">3</a>
+                                            </div>
+                                            <div class="light-page">
+                                                <a href="" class="">
+                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="" class="">
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <!-- Add Products -->
+        <!-- <div class="modal fade main_modal" id="AddCategoryModal">
+            <div class="modal-dialog modal-md top-8">
+                <div class="modal-content">
+                    <div class="py-4 px-4">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="">Add Products</h5>
+                            <a role="button" class="close" id="CloseCategoryForm">
+                                <span aria-hidden="true">
+                                    <i class="fa fa-close fs-4"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <form>
+                                <div class="form mt-4">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="row form-design">
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="image-upload-wrapper w-100">
+                                                                <label for="input-file" id="drop-area"
+                                                                    class="w-100 py-2 px-2 bg-white rounded-3">
+                                                                    <input type="file" accept="image/*" id="input-file"
+                                                                        hidden>
+                                                                    <div id="img-view"
+                                                                        class="py-4 px-4 rounded-3 w-100">
+                                                                        <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                                        <p class="fs-6 fw-light">upload image</p>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="position-relative add-image">
+                                                                <div class="image-upload-wrapper w-100">
+                                                                    <label for="input-file" id="drop-area"
+                                                                        class="w-100 py-2 px-2 bg-white rounded-3">
+                                                                        <input type="file" id="input-file" hidden>
+                                                                        <div id="img-view"
+                                                                            class="py-4 px-4 rounded-3 w-100">
+                                                                            <i
+                                                                                class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                                            <p class="fs-6 fw-light">upload image</p>
+                                                                            <button class="py-0 px-1 add-icon mb-0"
+                                                                                onclick="add_image(this)">
+                                                                                <i
+                                                                                    class="fa-solid fa-plus fw-bold fs-4"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="mt-3 form-group">
+                                                        <label for=""
+                                                            class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">Product
+                                                            name</label>
+                                                        <input type="text" class="form-control" placeholder="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for=""
+                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Product Price
+                                                            </label>
+                                                            <input type="text" class="form-control" placeholder="Price">
+                                                        </div>
+                                                        <div class="col-md-6 form-group">
+                                                            <label for=""
+                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Product Discount
+                                                            </label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Discount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for=""
+                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Category
+                                                            </label>
+                                                            <div>
+                                                                <select name="" id="" class="form-select">
+                                                                    <option value="">category</option>
+                                                                    <option value="">Mobile</option>
+                                                                    <option value="">Kids</option>
+                                                                    <option value="">Men</option>
+                                                                    <option value="">Women</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 form-group">
+                                                            <label for=""
+                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Add date
+                                                            </label>
+                                                            <div>
+                                                                <input type="date" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <label for=""
+                                                        class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                        Product Discription
+                                                    </label>
+                                                    <textarea name="" id="" class="form-control " rows="4"> </textarea>
+                                                </div>
+
+                                                <div class="mt-3">
+                                                    <a class="comman_btn cursor-pointer " role="button">Add
+                                                        Product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- View Product Modal -->
+        <div class="modal fade" id="viewProductModal" tabindex="-1" aria-labelledby="viewProductModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewProductModalLabel">Product Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Product details content -->
+                        <div class="w-100 border-bottom mb-4 pb-3">
+                            <div class="w-100p h-100p rounded-3 border overflow-hidden">
+                                <img src="./assets/img/makeup.jpeg" class="w-100 h-100" alt="Product Image"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Name</strong>
+                            <span>
+                                Yves Saint Laurent
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Price</strong>
+                            <span>
+                                $1,452
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Category</strong>
+                            <span>
+                                Beauty & Personal Care
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Sub Category</strong>
+                            <span>
+                                Body & Bath
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Sub Sub Category</strong>
+                            <span>
+                                Bath & Shower
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Quantity</strong>
+                            <span>
+                                1,638
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Sale</strong>
+                            <span>
+                                20
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Origin</strong>
+                            <span>
+                                USA
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Date</strong>
+                            <span>
+                                02-02-2024
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Stock</strong>
+                            <span class="fw-semibold h6 text-success">
+                                Available
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a role="button" class="comman_btn w-fit" data-bs-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Product Modal -->
+        <!-- <div class="modal fade main_modal" id="EditModal">
+            <div class="modal-dialog modal-md top-8">
+                <div class="modal-content" id="editProductsModal">
+                    <div class="py-4 px-4">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="">update Product</h5>
+                            <a role="button" id="CloseEdit">
+                                <span aria-hidden="true">
+                                    <i class="fa fa-close fs-4"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="">
+                            <form>
+                                <div class="form mt-4">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="row form-design">
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="image-upload-wrapper w-100">
+                                                                <label for="input-file" id="drop-area"
+                                                                    class="w-100 py-2 px-2 bg-white rounded-3">
+                                                                    <input type="file" accept="image/*" id="input-file"
+                                                                        hidden>
+                                                                    <div id="img-view"
+                                                                        class="py-4 px-4 rounded-3 w-100">
+                                                                        <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                                        <p class="fs-6 fw-light">upload image</p>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="position-relative add-image">
+                                                                <div class="image-upload-wrapper w-100">
+                                                                    <label for="input-file" id="drop-area"
+                                                                        class="w-100 py-2 px-2 bg-white rounded-3">
+                                                                        <input type="file" id="input-file" hidden>
+                                                                        <div id="img-view"
+                                                                            class="py-4 px-4 rounded-3 w-100">
+                                                                            <i
+                                                                                class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                                            <p class="fs-6 fw-light">upload image</p>
+                                                                            <button class="py-0 px-1 add-icon mb-0"
+                                                                                onclick="add_image(this)">
+                                                                                <i
+                                                                                    class="fa-solid fa-plus fw-bold fs-4"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="mt-3 form-group">
+                                                        <label for=""
+                                                            class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">Product
+                                                            name</label>
+                                                        <input type="text" class="form-control" placeholder="name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for=""
+                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Product Price
+                                                            </label>
+                                                            <input type="text" class="form-control" placeholder="Price">
+                                                        </div>
+                                                        <div class="col-md-6 form-group">
+                                                            <label for=""
+                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Product Discount
+                                                            </label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Discount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for=""
+                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Category
+                                                            </label>
+                                                            <div>
+                                                                <select name="" id="" class="form-select">
+                                                                    <option value="">category</option>
+                                                                    <option value="">Mobile</option>
+                                                                    <option value="">Kids</option>
+                                                                    <option value="">Men</option>
+                                                                    <option value="">Women</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 form-group">
+                                                            <label for=""
+                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Add date
+                                                            </label>
+                                                            <div>
+                                                                <input type="date" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <label for=""
+                                                        class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                        Product Discription
+                                                    </label>
+                                                    <textarea name="" id="" class="form-control " rows="4"> </textarea>
+                                                </div>
+
+                                                <div class="mt-3">
+                                                    <a class="comman_btn cursor-pointer " role="button">Update
+                                                        Product</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+        <script src="assets/vendor/jquery.min.js"></script>
+        <script src="assets/js/sidebar.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/owl/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+    </body>
+
+</html>

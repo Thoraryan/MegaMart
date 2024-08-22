@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Megamart</title>
+      <meta content="" name="description" />
+      <meta content="" name="keywords" />
+      <!-- Favicons -->
+      <link href="assets/img/favicon.png" rel="icon" />
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+      <!-- <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" /> -->
+      <link href="assets/vendor/owl/owl.carousel.min.css" rel="stylesheet" />
+      <!-- <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" /> -->
+      <link href="assets/css/style.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+   </head>
+
+   <body>
+      <table id="loader">
+         <tr>
+            <td>
+               <img src="./assets/img/logo.jpg" alt="" class="w-fit vh-50">
+               <div class="multi-spinner-container">
+                  <div class="multi-spinner">
+                     <div class="multi-spinner">
+                        <div class="multi-spinner">
+                           <div class="multi-spinner">
+                              <div class="multi-spinner">
+                                 <div class="multi-spinner"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div class="main-content d-block">
+         <div class="admin_header">
+            <div class="row justify-content-between align-items-center">
+               <div class="col-3 text-center d-flex gap-2 align-items-center">
+                  <a role="button" class="border-0 cursor-pointer" onclick="sideBarToggle()">
+                     <i class="fa fa-bars text-white fs-4 fw-semibold mb-0 pb-0"></i>
+                  </a>
+                  <a class="logo d-flex gap-2 align-items-center" href="dashboard.html">
+                     <div class="logo-wrapper">
+                        <img src="./assets/img/main_logo.png" alt="" class="w-100 h-100">
+                     </div>
+                     <h5 class="fs-5 fw-semibold text-white mb-0 mt-2">Megamart</h5>
+                  </a>
+               </div>
+               <div class="col-auto">
+                  <div class="row ">
+                     <div class="col-auto pe-2 d-md-block d-none">
+                        <a class="language_change" href="javascript:;"><img src="assets/img/saudi_arabia_img.png"
+                              alt="">Saudi Arabia</a>
+                     </div>
+                     <div class="col-auto d-flex align-items-center">
+                        <div class="dropdown Profile_dropdown">
+                           <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/img/user.png" alt="">
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="view-profile.html">View Profile</a></li>
+                              <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+                              <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                           </ul>
+                        </div>
+                        <!-- <div class="toggle_btns">
+                           <i class="fas fa-bars"></i>
+                        </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="admin_main">
+            <div class="admin_siderbarr pt-2">
+               <a class="sidebar-link" href="dashboard.html">
+                  <span><i class="fas fa-home"></i> </span>
+                  Dashboard
+               </a>
+               <a class="sidebar-link" href="users_management.html">
+                  <span><i class="fas fa-users"></i> </span>
+                  Users Management
+               </a>
+               <a class="sidebar-link" href="affiliate_management.html">
+                  <span><i class="fa-brands fa-affiliatetheme"></i></span>
+                  Affiliate Management
+               </a>
+               <a class="sidebar-link" href="orders_management.html">
+                  <span><i class="fa-brands fa-jedi-order"></i></span>
+                  Order Management
+               </a>
+               <a class="sidebar-link" href="Category_management.html">
+                  <span><i class="fa-solid fa-bag-shopping"></i></span>
+                  Category Management
+               </a>
+               <a class="sidebar-link" href="Filter_management.html">
+                  <span><i class="fa-solid fa-filter"></i></span>
+                  Filter Management
+               </a>
+               <a class="sidebar-link" href="survey_management.html">
+                  <span><i class="fa-solid fa-fire-flame-curved"></i></span>
+                  Survey Management
+               </a>
+               <a class="sidebar-link" href="Product.html">
+                  <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
+                  Products Management
+               </a>
+               <a class="sidebar-link" href="loyalty_program_management.html">
+                  <span><i class="fa fa-map-marked"></i></span>
+                  Loyalty Management
+               </a>
+               <a class="sidebar-link" href="membership_plan.html">
+                  <span><i class="fas fa-hand-holding-usd"></i></span>
+                  Membership Plan
+               </a>
+               <a class="sidebar-link" href="reports_management.html">
+                  <span><i class="fa fa-file"></i></span>
+                  Reports Management
+               </a>
+               <a class="sidebar-link" href="banner_management.html">
+                  <span class=""><i class="fa-solid fa-bars-progress"></i></span>
+                  Banner Management
+               </a>
+               <a class="sidebar-link" href="offer&gift_management.html">
+                  <span><i class="fa-solid fa-blog"></i></span>
+                  offer & gift management
+               </a>
+               <a class="sidebar-link" href="blog_management.html">
+                  <span class="">
+                     <i class="fa-brands fa-buffer"></i>
+                  </span>
+                  Blog Management
+               </a>
+               <a class="sidebar-link" href="beauty_tips_&_news_management.html">
+                  <span><i class="fa-brands fa-gratipay"></i></span>
+                  Beauty Tips & News
+               </a>
+               <a class="sidebar-link" href="inventory_management.html">
+                  <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                  Inventory Management
+               </a>
+               <a class="sidebar-link" href="payout_affiliate_management.html">
+                  <span><i class="fas fa-coins"></i></span>
+                  Pay-Out Affiliate
+               </a>
+               <a class="sidebar-link" href="refund_management.html">
+                  <span><i class="fa-solid fa-money-check-dollar"></i></span>
+                  Refund Management
+               </a>
+               <a class="sidebar-link" href="transaction_management.html">
+                  <span><i class="fas fa-sync-alt"></i></span>
+                  Transaction
+               </a>
+               <a class="sidebar-link" href="promo&coupon_management.html">
+                  <span><i class="fa-solid fa-ticket"></i></span>
+                  Promo & Coupon
+               </a>
+               <a class="sidebar-link" href="help&support.html">
+                  <span><i class="fas fa-headset"></i></span>
+                  Help & Support
+               </a>
+               <a class="sidebar-link" href="contact_management.html">
+                  <span><i class="fa fa-user-cog"></i></span>
+                  Content Management
+               </a>
+               <!-- <a class="sidebar-link" href="Product.html"><span><i class="fa-solid fa-shopping-cart"></i></span>Product</a> -->
+               <a class="sidebar-link" href="login.html"><span><i class="fas fa-sign-out-alt"></i></span>
+                  Logout</a>
+            </div>
+            <div class="admin_contentpart">
+               <div class="row mb-md-4">
+                  <div class="col-xxl-3 col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-0">
+                     <div class="bg-white shadow py-3 px-3 common_border_radius dashboard-card card-hover">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                           <div class="d-flex flex-wrap justify-content-between gap-2">
+                              <div class="bg-main text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                 <i class="fa-solid fa-users"></i>
+                              </div>
+                              <div class="text-primary">
+                                 <div class="mb-2 dash-card-text">Total Users</div>
+                                 <h4 class="mb-0">34,945</h4>
+                              </div>
+                           </div>
+                           <div class="box-icon-trending up text-primary text-center">
+                              <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                              <div class="number">1.56%</div>
+                           </div>
+                        </div>
+                        <div id="line-chart-1" class="line-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-0 mt-4">
+                     <div class="bg-white shadow py-3 px-3 common_border_radius dashboard-card card-hover">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                           <div class="d-flex flex-wrap justify-content-between gap-2">
+                              <div
+                                 class="bg-main-2 text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                 <i class="fa-brands fa-affiliatetheme"></i>
+                              </div>
+                              <div class="text-primary">
+                                 <div class="mb-2 dash-card-text">Total Affiliates</div>
+                                 <h4 class="mb-0">34,945</h4>
+                              </div>
+                           </div>
+                           <div class="box-icon-trending up text-primary text-center">
+                              <i class="fa-solid fa-arrow-trend-down text-danger"></i>
+                              <div class="number">8.56%</div>
+                           </div>
+                        </div>
+                        <div id="line-chart-2" class="line-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-4 mt-4">
+                     <div class="bg-white shadow py-3 px-3 common_border_radius dashboard-card card-hover">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                           <div class="d-flex flex-wrap justify-content-between gap-2">
+                              <div
+                                 class="bg-main-3 text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                 <i class="fa-solid fa-shopping-cart"></i>
+                              </div>
+                              <div class="text-primary">
+                                 <div class="mb-2 dash-card-text">Total Products</div>
+                                 <h4 class="mb-0">34,945</h4>
+                              </div>
+                           </div>
+                           <div class="box-icon-trending up text-primary text-center">
+                              <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                              <div class="number">2.56%</div>
+                           </div>
+                        </div>
+                        <div id="line-chart-3" class="line-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-4 mt-4">
+                     <div class="bg-white shadow py-3 px-3 common_border_radius dashboard-card card-hover">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                           <div class="d-flex flex-wrap justify-content-between gap-2">
+                              <div class="bg-main-4 py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                 <i class="fa-solid fa-money-bill-trend-up text-white"></i>
+                              </div>
+                              <div class="text-primary">
+                                 <div class="mb-2 dash-card-text">Total Orders</div>
+                                 <h4 class="mb-0">34,945</h4>
+                              </div>
+                           </div>
+                           <div class="box-icon-trending up text-primary text-center">
+                              <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                              <div class="number">1.56%</div>
+                           </div>
+                        </div>
+                        <div id="line-chart-4" class="line-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-3 col-md-6 col-12 mt-md-4 mt-4">
+                     <div class="bg-white shadow py-3 px-3 common_border_radius dashboard-card card-hover">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                           <div class="d-flex flex-wrap justify-content-between gap-2">
+                              <div class="bg-main-4 py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                 <i class="fa-solid fa-shopping-basket text-white"></i>
+                              </div>
+                              <div class="text-primary">
+                                 <div class="mb-2 dash-card-text">Total Completed Orders</div>
+                                 <h4 class="mb-0">34,945</h4>
+                              </div>
+                           </div>
+                           <div class="box-icon-trending up text-primary text-center">
+                              <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                              <div class="number">1.56%</div>
+                           </div>
+                        </div>
+                        <div id="line-chart-8" class="line-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-3 col-md-6 col-12 mt-md-4 mt-4">
+                     <div class="bg-white shadow py-3 px-3 common_border_radius dashboard-card card-hover">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                           <div class="d-flex flex-wrap justify-content-between gap-2">
+                              <div
+                                 class="bg-main-3 text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                 <i class="fa-solid fa-user text-white"></i>
+                              </div>
+                              <div class="text-primary">
+                                 <div class="mb-2 dash-card-text">Total Active Orders</div>
+                                 <h4 class="mb-0">34,945</h4>
+                              </div>
+                           </div>
+                           <div class="box-icon-trending up text-primary text-center">
+                              <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                              <div class="number">2.56%</div>
+                           </div>
+                        </div>
+                        <div id="line-chart-7" class="line-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-3 col-md-6 col-12 mt-md-4 mt-4">
+                     <div class="bg-white shadow py-3 px-3 common_border_radius dashboard-card card-hover">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                           <div class="d-flex flex-wrap justify-content-between gap-2">
+                              <div
+                                 class="bg-main-2 text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                 <i class="fa-solid fa-chart-simple"></i>
+                              </div>
+                              <div class="text-primary">
+                                 <div class="mb-2 dash-card-text">Total Revenue</div>
+                                 <h4 class="mb-0">34,945</h4>
+                              </div>
+                           </div>
+                           <div class="box-icon-trending up text-primary text-center">
+                              <i class="fa-solid fa-arrow-trend-down text-danger"></i>
+                              <div class="number">8.56%</div>
+                           </div>
+                        </div>
+                        <div id="line-chart-6" class="line-chart"></div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-3 col-lg-3 col-md-6 col-12 mt-md-4 mt-4">
+                     <div class="bg-white shadow py-3 px-3 common_border_radius dashboard-card card-hover">
+                        <div class="d-flex justify-content-between align-items-baseline">
+                           <div class="d-flex flex-wrap justify-content-between gap-2">
+                              <div class="bg-main text-white py-1 px-2 rounded-circle shadow-sm border icon-card-dash">
+                                 <i class="fa-solid fa-cart-plus"></i>
+                              </div>
+                              <div class="text-primary">
+                                 <div class="mb-2 dash-card-text">Total Upcoming Revenue</div>
+                                 <h4 class="mb-0">34,945</h4>
+                              </div>
+                           </div>
+                           <div class="box-icon-trending up text-primary text-center">
+                              <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                              <div class="number">1.56%</div>
+                           </div>
+                        </div>
+                        <div id="line-chart-5" class="line-chart"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12 col-md-12 mt-md-0 mt-4">
+                     <div class="comman_design common_border_radius">
+                        <div class="comman_table pt-md-3 pb-md-4 pb-3 px-md-3 px-2 shadow ">
+                           <div class="row align-items-center justify-content-between">
+                              <div class="col-md-auto mb-md-0 mb-3 mt-4 mt-md-0">
+                                 <div class="headleft">
+                                    <h2>Orders List
+                                    </h2>
+                                 </div>
+                              </div>
+                              <div class="col-md-4 d-flex align-items-center justify-content-end">
+                                 <div class="searchh_box position-relative">
+                                    <input class="form-control" type="search" placeholder="Search">
+                                    <button><i class="fas fa-search"></i></button>
+                                 </div>
+                                 <div class="dropdown filterdropdown">
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                       <i class="fas fa-filter"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                       <form class="form-design row mx-0" action="">
+                                          <div class="col-12 form-group">
+                                             <label for="">Filter</label>
+                                             <select class="form-select" aria-label="Default select example">
+                                                <option selected="">Filter by Daily</option>
+                                                <option value="1">Filter by Weekly</option>
+                                                <option value="2">Filter by Monthly</option>
+                                                <option value="2">Filter by Yearly</option>
+                                                <option value="2">Filter by Date Range</option>
+                                             </select>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="table-responsive mt-4">
+                              <table class="table table-hover">
+                                 <thead>
+                                    <tr>
+                                       <th class="text-center">sr.</th>
+                                       <th class="text-center">Order Id</th>
+                                       <th class="text-center">Image</th>
+                                       <th class="text-center">Name</th>
+                                       <th class="text-center">User Name</th>
+                                       <th class="text-center">price</th>
+                                       <!-- <th class="text-center">User Address</th> -->
+                                       <th class="text-center">Status</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr class="py-0 px-0 order-view">
+                                       <td class="text-center px-1">1</td>
+                                       <td class="text-center px-1">#01</td>
+                                       <td class="">
+                                          <div class="d-flex w-100 justify-content-center">
+                                             <div class="w-fit h-fit py-1 px-1 bg-light">
+                                                <img src="./assets/img/canon_cam.jpeg" alt="" class="w-40p h-40p">
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-center px-1">Interchangeable Lens Cameras</td>
+                                       <td class="text-center px-1">Aryan</td>
+                                       <td class="text-center px-1">$999.99</td>
+                                       <!-- <td class="text-center px-1">117/402 krishnapuri</td> -->
+                                       <td class="text-center px-1">
+                                          <a class="deliverd_btn">
+                                             Deliverd
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr class="py-0 px-0 order-view">
+                                       <td class="text-center px-1">2</td>
+                                       <td class="text-center px-1">#01</td>
+                                       <td class="">
+                                          <div class="d-flex w-100 justify-content-center">
+                                             <div class="w-fit h-fit py-1 px-1 bg-light">
+                                                <img src="./assets/img/makeup.jpeg
+                                                                  " alt="" class="w-40p h-40p">
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-center px-1">Beauty Products</td>
+                                       <td class="text-center px-1">park Shin</td>
+                                       <td class="text-center px-1">$999.99</td>
+                                       <!-- <td class="text-center px-1">kanpur</td> -->
+                                       <td class="text-center px-1">
+                                          <a class="not_deliverd_btn">
+                                             Not Deliverd
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr class="py-0 px-0 order-view">
+                                       <td class="text-center px-1">3</td>
+                                       <td class="text-center px-1">#20</td>
+                                       <td class="">
+                                          <div class="d-flex w-100 justify-content-center">
+                                             <div class="w-fit h-fit py-1 px-1 bg-light">
+                                                <img src="./assets/img/certificated.jpg" alt="" class="w-40p h-40p">
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-center px-1">certificated</td>
+                                       <td class="text-center px-1">Aryan</td>
+                                       <td class="text-center px-1">$999.99</td>
+                                       <!-- <td class="text-center px-1">117/402 krishnapuri</td> -->
+                                       <td class="text-center px-1">
+                                          <a class="deliverd_btn">
+                                             Deliverd
+                                          </a>
+                                       </td>
+                                    </tr>
+                                    <tr class="py-0 px-0 order-view">
+                                       <td class="text-center px-1">4</td>
+                                       <td class="text-center px-1">#01</td>
+                                       <td class="">
+                                          <div class="d-flex w-100 justify-content-center">
+                                             <div class="w-fit h-fit py-1 px-1 bg-light">
+                                                <img src="./assets/img/certificated.jpg" alt="" class="w-40p h-40p">
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="text-center px-1">certificated</td>
+                                       <td class="text-center px-1">Aryan</td>
+                                       <td class="text-center px-1">$999.99</td>
+                                       <!-- <td class="text-center px-1">117/402 krishnapuri</td> -->
+                                       <td class="text-center px-1">
+                                          <a class="not_deliverd_btn">
+                                             Not Deliverd
+                                          </a>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12 mt-4">
+                     <div class="comman_design  common_border_radius py-4 px-4 shadow h-100">
+                        <h2 class="mb-4 fs-5 mt-3 fw-semibold text-capitalize">Recent Order overview</h2>
+                        <div class="card chart-container">
+                           <canvas id="chart"></canvas>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12 mt-4">
+                     <div class="comman_design common_border_radius pb-0 pt-4 px-4 shadow h-100">
+                        <div class="card-header border-0 bg-white mb-0 pb-0">
+                           <h3 class="fs-5 fw-semibold text-capitalize mb-1">Trending Products</h3>
+                        </div>
+                        <div class="mb-0 px-0 mt-4">
+                           <div class="table-responsive">
+                              <table class="table table-hover border common_border_radius border">
+                                 <thead>
+                                    <tr class="common_border_radius">
+                                       <th class="text-dark text-center">Image</th>
+                                       <th class="text-dark text-center">Name</th>
+                                       <th class="text-dark text-center">revenue</th>
+                                       <th class="text-dark text-center">Progress</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr class="text-center cursor-pointer">
+                                       <td class="">
+                                          <div class="d-flex w-100 justify-content-center">
+                                             <div class="w-fit h-fit py-1 px-1 bg-light">
+                                                <img src="./assets/img/certificated.jpg" alt="" class="w-40p h-40p">
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="py-0 fs-6 text-dark text-center">
+                                          Patimax
+                                       </td>
+                                       <td class="py-0 fs-6 text-center text-success">99.00 K
+                                       </td>
+                                       <td class="text-center">
+                                          <div class="d-flex justify-content-center">
+                                             <a class="text-success bg-light Table_btn">
+                                                <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr class="text-center cursor-pointer">
+                                       <td class="">
+                                          <div class="d-flex w-100 justify-content-center">
+                                             <div class="w-fit h-fit py-1 px-1 bg-light">
+                                                <img src="./assets/img/certificated.jpg" alt="" class="w-40p h-40p">
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="py-0 fs-6 text-dark text-center">
+                                          Patimax
+                                       </td>
+                                       <td class="py-0 fs-6 text-center text-danger">16.00 M
+                                       </td>
+                                       <td class="text-center">
+                                          <div class="d-flex justify-content-center">
+                                             <a class="text-danger bg-light Table_btn">
+                                                <i class="fa-solid fa-arrow-trend-down text-danger"></i>
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr class="text-center cursor-pointer">
+                                       <td class="">
+                                          <div class="d-flex w-100 justify-content-center">
+                                             <div class="w-fit h-fit py-1 px-1 bg-light">
+                                                <img src="./assets/img/certificated.jpg" alt="" class="w-40p h-40p">
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td class="py-0 fs-6 text-dark text-center">
+                                          Patimax
+                                       </td>
+                                       <td class="py-0 fs-6 text-center text-success">99.00 K
+                                       </td>
+                                       <td class="text-center">
+                                          <div class="d-flex justify-content-center">
+                                             <a class="text-success bg-light Table_btn">
+                                                <i class="fa-solid fa-arrow-trend-up text-success"></i>
+                                             </a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./assets/vendor/jquery.min.js"></script>
+      <script src="./assets/js/d3.js"></script>
+      <script src="./assets/js/line-chart.js"></script>
+      <script src="./assets/js/sidebar.js"></script>
+      <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="./assets/vendor/owl/owl.carousel.min.js"></script>
+      <script src="./assets/js/apexchart.js"></script>
+      <script src="./assets/js/chart.js"></script>
+      <script src="./assets/js/main.js"></script>
+
+
+      <div class="modal fade fitermoddel" id="fitermoddel" data-bs-backdrop="static" data-bs-keyboard="false"
+         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Filter</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body px-4 py-4">
+                  <form class="form-design row" action="#">
+                     <div class="form-group px-2 col-md-3">
+                        <label for="">Year</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected="">2001</option>
+                           <option value="1">2002</option>
+                           <option value="2">2003</option>
+                           <option value="2">2004</option>
+                           <option value="2">2005</option>
+                           <option value="2">2006</option>
+                           <option value="2">2007</option>
+                           <option value="2">2008</option>
+                           <option value="2">2009</option>
+                           <option value="2">2010</option>
+                        </select>
+                     </div>
+                     <div class="form-group px-2 col-md-3">
+                        <label for="">Month</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected="">Jan</option>
+                           <option value="1">Feb</option>
+                           <option value="2">Mar</option>
+                           <option value="2">Apr</option>
+                           <option value="2">May</option>
+                           <option value="2">Jun</option>
+                           <option value="2">July</option>
+                           <option value="2">August</option>
+                           <option value="2">Sep</option>
+                           <option value="2">Oct</option>
+                           <option value="2">Nov</option>
+                           <option value="2">Dec</option>
+                        </select>
+                     </div>
+                     <div class="form-group px-2 col-md-3">
+                        <label for="">Subscription</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected="">Select</option>
+                           <option>subscriber</option>
+                           <option value="1">non-subscriber</option>
+                        </select>
+                     </div>
+                     <div class="form-group px-2 col-md-3">
+                        <label for="">City</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected="">Select</option>
+                           <option>Holon</option>
+                           <option value="1">Jerusalem</option>
+                           <option value="2">Karmiel</option>
+                           <option value="2">Kafr Qasim</option>
+                        </select>
+                     </div>
+                     <div class="form-group px-2 col-md-4">
+                        <label for="">Total Games Played</label>
+                        <select class="form-select" aria-label="Default select example">
+                           <option selected="">Select</option>
+                           <option>5</option>
+                           <option value="1">20</option>
+                           <option value="2">15</option>
+                           <option value="2">20</option>
+                        </select>
+                     </div>
+                     <div class="form-group px-2 col-md-4">
+                        <label for="">Rating</label>
+                        <div class="row">
+                           <div class="col-md-4 pe-2">
+                              <div class="checkbox_main">
+                                 <input class="d-none" type="checkbox" id="checkbox" name="checkbox">
+                                 <label for="checkbox">2000</label>
+                              </div>
+                           </div>
+                           <div class="col-md-4 pe-2">
+                              <div class="checkbox_main">
+                                 <input class="d-none" type="checkbox" id="checkbox1" name="checkbox1">
+                                 <label for="checkbox1">3000</label>
+                              </div>
+                           </div>
+                           <div class="col-md-4 pe-2">
+                              <div class="checkbox_main">
+                                 <input class="d-none" type="checkbox" id="checkbox2" name="checkbox2">
+                                 <label for="checkbox2">4000</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group px-2 col-md-4">
+                        <label for="">Sort By</label>
+                        <div class="row">
+                           <div class="col-md-auto pe-2">
+                              <div class="checkbox_main">
+                                 <input class="d-none" type="checkbox" id="Sort1" name="Sort1">
+                                 <label for="Sort1">Win</label>
+                              </div>
+                           </div>
+                           <div class="col-md-auto pe-2">
+                              <div class="checkbox_main">
+                                 <input class="d-none" type="checkbox" id="Sort2" name="Sort2">
+                                 <label for="Sort2">Loses</label>
+                              </div>
+                           </div>
+                           <div class="col-md-auto pe-2">
+                              <div class="checkbox_main">
+                                 <input class="d-none" type="checkbox" id="Sort3" name="Sort3">
+                                 <label for="Sort3">Draws</label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12 mt-4">
+                        <div class="row justify-content-center">
+                           <div class="col-md-3">
+                              <a class="comman_btn bg-danger" href="javascript:;">Reset</a>
+                           </div>
+                           <div class="col-md-3">
+                              <a class="comman_btn" href="javascript:;">Apply</a>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+
+</html>

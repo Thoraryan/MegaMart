@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Saudi Arabia</title>
+      <meta content="" name="description" />
+      <meta content="" name="keywords" />
+      <!-- Favicons -->
+      <link href="assets/img/favicon.png" rel="icon" />
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+      <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+      <link href="assets/vendor/owl/owl.carousel.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+      <link href="assets/css/style.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+   </head>
+
+   <body>
+      <div class="main-content">
+         <div class="admin_header">
+            <div class="row justify-content-between align-items-center">
+               <div class="col-3 text-center d-flex gap-2 align-items-center">
+                  <a role="button" class="border-0 cursor-pointer" onclick="sideBarToggle()">
+                     <i class="fa fa-bars text-white fs-4 fw-semibold mb-0 pb-0"></i>
+                  </a>
+                  <a class="logo d-flex gap-2 align-items-center" href="dashboard.html">
+                     <div class="logo-wrapper">
+                        <img src="./assets/img/main_logo.png" alt="" class="w-100 h-100">
+                     </div>
+                     <h5 class="fs-5 fw-semibold text-white mb-0 mt-2">Megamart</h5>
+                  </a>
+               </div>
+               <div class="col-auto">
+                  <div class="row ">
+                     <div class="col-auto pe-2 d-md-block d-none">
+                        <a class="language_change" href="javascript:;"><img src="assets/img/saudi_arabia_img.png"
+                              alt="">Saudi
+                           Arabia</a>
+                     </div>
+                     <div class="col-auto d-flex align-items-center">
+                        <div class="dropdown Profile_dropdown">
+                           <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              <img src="assets/img/user.png" alt="">
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="view-profile.html">View Profile</a></li>
+                              <li><a class="dropdown-item" href="change-password.html">Change Password</a>
+                              </li>
+                              <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                           </ul>
+                        </div>
+                        <!-- <div class="toggle_btns">
+                                         <i class="fas fa-bars"></i>
+                                      </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="admin_main">
+            <div class="admin_siderbarr pt-2">
+               <a class="sidebar-link" href="dashboard.html">
+                  <span><i class="fas fa-home"></i> </span>
+                  Dashboard
+               </a>
+               <a class="sidebar-link" href="users_management.html">
+                  <span><i class="fas fa-users"></i> </span>
+                  Users Management
+               </a>
+               <a class="sidebar-link" href="affiliate_management.html">
+                  <span><i class="fa-brands fa-affiliatetheme"></i></span>
+                  Affiliate Management
+               </a>
+               <a class="sidebar-link" href="orders_management.html">
+                  <span><i class="fa-brands fa-jedi-order"></i></span>
+                  Order Management
+               </a>
+               <a class="sidebar-link" href="Category_management.html">
+                  <span><i class="fa-solid fa-bag-shopping"></i></span>
+                  Category Management
+               </a>
+               <a class="sidebar-link" href="Filter_management.html">
+                  <span><i class="fa-solid fa-filter"></i></span>
+                  Filter Management
+               </a>
+               <a class="sidebar-link" href="survey_management.html">
+                  <span><i class="fa-solid fa-fire-flame-curved"></i></span>
+                  Survey Management
+               </a>
+               <a class="sidebar-link" href="Product.html">
+                  <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
+                  Products Management
+               </a>
+               <a class="sidebar-link" href="loyalty_program_management.html">
+                  <span><i class="fa fa-map-marked"></i></span>
+                  Loyalty Management
+               </a>
+               <a class="sidebar-link" href="membership_plan.html">
+                  <span><i class="fas fa-hand-holding-usd"></i></span>
+                  Membership Plan
+               </a>
+               <a class="sidebar-link" href="reports_management.html">
+                  <span><i class="fa fa-file"></i></span>
+                  Reports Management
+               </a>
+               <a class="sidebar-link" href="banner_management.html">
+                  <span class=""><i class="fa-solid fa-bars-progress"></i></span>
+                  Banner Management
+               </a>
+               <a class="sidebar-link" href="offer&gift_management.html">
+                  <span><i class="fa-solid fa-blog"></i></span>
+                  offer & gift management
+               </a>
+               <a class="sidebar-link" href="blog_management.html">
+                  <span class="">
+                     <i class="fa-brands fa-buffer"></i>
+                  </span>
+                  Blog Management
+               </a>
+               <a class="sidebar-link" href="beauty_tips_&_news_management.html">
+                  <span><i class="fa-brands fa-gratipay"></i></span>
+                  Beauty Tips & News
+               </a>
+               <a class="sidebar-link" href="inventory_management.html">
+                  <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                  Inventory Management
+               </a>
+               <a class="sidebar-link" href="payout_affiliate_management.html">
+                  <span><i class="fas fa-coins"></i></span>
+                  Pay-Out Affiliate
+               </a>
+               <a class="sidebar-link" href="refund_management.html">
+                  <span><i class="fa-solid fa-money-check-dollar"></i></span>
+                  Refund Management
+               </a>
+               <a class="sidebar-link" href="transaction_management.html">
+                  <span><i class="fas fa-sync-alt"></i></span>
+                  Transaction
+               </a>
+               <a class="sidebar-link" href="promo&coupon_management.html">
+                  <span><i class="fa-solid fa-ticket"></i></span>
+                  Promo & Coupon
+               </a>
+               <a class="sidebar-link" href="help&support.html">
+                  <span><i class="fas fa-headset"></i></span>
+                  Help & Support
+               </a>
+               <a class="sidebar-link" href="contact_management.html">
+                  <span><i class="fa fa-user-cog"></i></span>
+                  Content Management
+               </a>
+               <!-- <a class="sidebar-link" href="Product.html"><span><i class="fa-solid fa-shopping-cart"></i></span>Product</a> -->
+               <a class="sidebar-link" href="login.html"><span><i class="fas fa-sign-out-alt"></i></span>
+                  Logout</a>
+            </div>
+            <div class="admin_contentpart">
+               <div class="row mx-0">
+                  <div class="col-12">
+                     <div class="userdetails row align-items-center">
+                        <div class="col-md-auto">
+                           <div class="userdetails_img position-relative">
+                              <img src="assets/img/profile_img1.png" alt="">
+                              <a class="editicon" href="javascript:;"><i class="fas fa-edit"></i></a>
+                           </div>
+                        </div>
+                        <div class="col">
+                           <div class="userdetails_main ps-md-2 pe-md-5">
+                              <h2>David Johnson </h2>
+                              <a class="edit_btn" href="javascript:;">Edit Profile</a>
+                           </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                           <form class="row form-design" action="">
+                              <div class="form-group col-md-4">
+                                 <label for="">Full Name</label>
+                                 <input type="text" class="form-control" value="David Johnson" name="name" id="name">
+                              </div>
+                              <div class="form-group col-md-4">
+                                 <label for="">Email Address</label>
+                                 <input type="text" class="form-control" value="user123@example.com" name="name"
+                                    id="name">
+                              </div>
+                              <div class="form-group col-md-4">
+                                 <label for="">Mobile Number</label>
+                                 <input type="text" class="form-control" value="123-456-7890" name="name" id="name">
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="assets/vendor/jquery.min.js"></script>
+      <script src="assets/js/sidebar.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/owl/owl.carousel.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+      <script src="assets/js/main.js"></script>
+
+
+
+   </body>
+
+</html>

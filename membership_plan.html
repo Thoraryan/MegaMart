@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Megamart</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+        <!-- Favicons -->
+        <link href="assets/img/favicon.png" rel="icon" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+        <link href="assets/vendor/owl/owl.carousel.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+    </head>
+
+    <body>
+        <div class="main-content">
+            <div class="admin_header">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-3 text-center d-flex gap-2 align-items-center">
+                        <a role="button" class="border-0 cursor-pointer" onclick="sideBarToggle()">
+                            <i class="fa fa-bars text-white fs-4 fw-semibold mb-0 pb-0"></i>
+                        </a>
+                        <a class="logo d-flex gap-2 align-items-center" href="dashboard.html">
+                            <div class="logo-wrapper">
+                                <img src="./assets/img/main_logo.png" alt="" class="w-100 h-100">
+                            </div>
+                            <h5 class="fs-5 fw-semibold text-white mb-0 mt-2">Megamart</h5>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row ">
+                            <div class="col-auto pe-2 d-md-block d-none">
+                                <a class="language_change" href="javascript:;"><img
+                                        src="assets/img/saudi_arabia_img.png" alt="">Saudi Arabia</a>
+                            </div>
+                            <div class="col-auto d-flex align-items-center">
+                                <div class="dropdown Profile_dropdown">
+                                    <button class="btn btn-secondary" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/img/user.png" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="view-profile.html">View Profile</a></li>
+                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                                <!-- <div class="toggle_btns">
+                                       <i class="fas fa-bars"></i>
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin_main">
+                <div class="admin_siderbarr pt-2">
+                    <a class="sidebar-link" href="dashboard.html">
+                        <span><i class="fas fa-home"></i> </span>
+                        Dashboard
+                    </a>
+                    <a class="sidebar-link" href="users_management.html">
+                        <span><i class="fas fa-users"></i> </span>
+                        Users Management
+                    </a>
+                    <a class="sidebar-link" href="affiliate_management.html">
+                        <span><i class="fa-brands fa-affiliatetheme"></i></span>
+                        Affiliate Management
+                    </a>
+                    <a class="sidebar-link" href="orders_management.html">
+                        <span><i class="fa-brands fa-jedi-order"></i></span>
+                        Order Management
+                    </a>
+                    <a class="sidebar-link" href="Category_management.html">
+                        <span><i class="fa-solid fa-bag-shopping"></i></span>
+                        Category Management
+                    </a>
+                    <a class="sidebar-link" href="Filter_management.html">
+                        <span><i class="fa-solid fa-filter"></i></span>
+                        Filter Management
+                    </a>
+                    <a class="sidebar-link" href="survey_management.html">
+                        <span><i class="fa-solid fa-fire-flame-curved"></i></span>
+                        Survey Management
+                    </a>
+                    <a class="sidebar-link" href="Product.html">
+                        <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
+                        Products Management
+                    </a>
+                    <a class="sidebar-link" href="loyalty_program_management.html">
+                        <span><i class="fa fa-map-marked"></i></span>
+                        Loyalty Management
+                    </a>
+                    <a class="sidebar-link" href="membership_plan.html">
+                        <span><i class="fas fa-hand-holding-usd"></i></span>
+                        Membership Plan
+                    </a>
+                    <a class="sidebar-link" href="reports_management.html">
+                        <span><i class="fa fa-file"></i></span>
+                        Reports Management
+                    </a>
+                    <a class="sidebar-link" href="banner_management.html">
+                        <span class=""><i class="fa-solid fa-bars-progress"></i></span>
+                        Banner Management
+                    </a>
+                    <a class="sidebar-link" href="offer&gift_management.html">
+                        <span><i class="fa-solid fa-blog"></i></span>
+                        offer & gift management
+                    </a>
+                    <a class="sidebar-link" href="blog_management.html">
+                        <span class="">
+                            <i class="fa-brands fa-buffer"></i>
+                        </span>
+                        Blog Management
+                    </a>
+                    <a class="sidebar-link" href="beauty_tips_&_news_management.html">
+                        <span><i class="fa-brands fa-gratipay"></i></span>
+                        Beauty Tips & News
+                    </a>
+                    <a class="sidebar-link" href="inventory_management.html">
+                        <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                        Inventory Management
+                    </a>
+                    <a class="sidebar-link" href="payout_affiliate_management.html">
+                        <span><i class="fas fa-coins"></i></span>
+                        Pay-Out Affiliate
+                    </a>
+                    <a class="sidebar-link" href="refund_management.html">
+                        <span><i class="fa-solid fa-money-check-dollar"></i></span>
+                        Refund Management
+                    </a>
+                    <a class="sidebar-link" href="transaction_management.html">
+                        <span><i class="fas fa-sync-alt"></i></span>
+                        Transaction
+                    </a>
+                    <a class="sidebar-link" href="promo&coupon_management.html">
+                        <span><i class="fa-solid fa-ticket"></i></span>
+                        Promo & Coupon
+                    </a>
+                    <a class="sidebar-link" href="help&support.html">
+                        <span><i class="fas fa-headset"></i></span>
+                        Help & Support
+                    </a>
+                    <a class="sidebar-link" href="contact_management.html">
+                        <span><i class="fa fa-user-cog"></i></span>
+                        Content Management
+                    </a>
+                    <!-- <a class="sidebar-link" href="Product.html"><span><i class="fa-solid fa-shopping-cart"></i></span>Product</a> -->
+                    <a class="sidebar-link" href="login.html"><span><i class="fas fa-sign-out-alt"></i></span>
+                        Logout</a>
+                </div>
+                <div class="admin_contentpart">
+                    <div class="mb-4 w-100 justify-content-end d-flex flex-wrap">
+                        <a role="button" class="comman_btn w-fit cursor-pointer openCategoryBtn">
+                            <i class="fa fa-plus"></i>
+                            Add Membership Plan
+                        </a>
+                    </div>
+                    <div class="row comman_design shadow mx-0 common_border_radius">
+                        <div class="col-12">
+                            <div class="row align-items-center justify-content-between py-md-4 py-3 px-md-3 px-2">
+                                <div class="col-md-auto mb-md-0 mb-3">
+                                    <div class="headleft">
+                                        <h2>Membership Plan Management
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-flex align-items-center justify-content-end">
+                                    <div class="searchh_box position-relative">
+                                        <input class="form-control" type="search" placeholder="Search">
+                                        <button><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row comman_table pt-md-3 pb-md-4 pb-3 px-md-3 px-2">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Sr.</th>
+                                                    <th>Plan Name</th>
+                                                    <th>Price</th>
+                                                    <th>Features Included</th>
+                                                    <th>Validity</th>
+                                                    <th>status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Standard</td>
+                                                    <td>100 $</td>
+                                                    <td>
+                                                        1 league team entry
+                                                        <br>1 league individual player tournament entry
+                                                        <br>Ai chess coach
+                                                        <br>Historical game record
+                                                    </td>
+                                                    <td>Annual</td>
+                                                    <td>
+                                                        <div class="form-check form-switch mb-0 mt-2">
+                                                            <input class="form-check-input check-custom" type="checkbox"
+                                                                id="flexSwitchCheckChecked" checked>
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <a href="" class="Table_btn me-2" data-bs-toggle="modal"
+                                                                data-bs-target="#viewPlanModal">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>premium</td>
+                                                    <td>149 $</td>
+                                                    <td>
+                                                        Sharing of individual live game streams with friend coach and
+                                                        parents.
+                                                        <br> Sharing of individual historical games with friend, parents
+                                                        and coach for coaching purposes.
+                                                        <br> Analytical scouting report including chess opening data.
+                                                        <br> Coaching is separate
+                                                    </td>
+                                                    <td>Annual</td>
+                                                    <td>
+                                                        <div class="form-check form-switch mb-0 mt-2">
+                                                            <input class="form-check-input check-custom" type="checkbox"
+                                                                id="flexSwitchCheckChecked" checked>
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <a href="" class="Table_btn me-2" data-bs-toggle="modal"
+                                                                data-bs-target="#viewPlanModal">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Ultimate Plan</td>
+                                                    <td>200 $</td>
+                                                    <td>
+                                                        Sharing of individual live game streams with friend coach and
+                                                        parents.
+                                                        <br> Sharing of individual historical games with friend, parents
+                                                        and coach for coaching purposes.
+                                                        <br> Analytical scouting report including chess opening data.
+                                                        <br> Coaching is separate
+                                                    </td>
+                                                    <td>Annual</td>
+                                                    <td>
+                                                        <div class="form-check form-switch mb-0 mt-2">
+                                                            <input class="form-check-input check-custom" type="checkbox"
+                                                                id="flexSwitchCheckChecked" checked>
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckChecked"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <a href="" class="Table_btn me-2" data-bs-toggle="modal"
+                                                                data-bs-target="#viewPlanModal">
+                                                                <i class="fa fa-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Add Membership Plan -->
+        <div class="modal fade main_modal" id="AddCategoryModal">
+            <div class="modal-dialog modal-md top-25">
+                <div class="modal-content">
+                    <div class="py-4 px-4">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="fs-6 fw-semibold">Add Membership Plan</h5>
+                            <a role="button" id="CloseCategoryForm">
+                                <span aria-hidden="true">
+                                    <i class="fa fa-close fs-4"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <form class="form-design">
+                                <div class="form-group">
+                                    <label for="user-name">Plan Name</label>
+                                    <input type="text" class="form-control" id="user-name" readonly>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <label for="user-points">Plan Amount</label>
+                                    <input type="number" class="form-control" id="user-points">
+                                </div>
+                                <div class="form-group mt-4">
+                                    <label for="user-tier">Plan Validity</label>
+                                    <input type="text" class="form-control" id="user-tier" readonly>
+                                </div>
+                                <a role="buttom" class="comman_btn mt-4">Add Membership Plan</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- view Reward -->
+        <div class="modal fade top-15" id="viewPlanModal" tabindex="-1" aria-labelledby="viewPlanModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewPlanModalLabel">Membership Plan Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body px-4">
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Membership Plan Name</strong>
+                            <span>
+                                Ultimate Plan
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Membership Plan Amount</strong>
+                            <span>
+                                $200
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Membership Plan Validity</strong>
+                            <span>
+                                Annual
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Membership Plan Features </strong>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis perferendis, libero quia
+                                ullam cumque fugiat quidem minus aperiam excepturi voluptas inventore nam modi
+                                laboriosam porro odio asperiores animi eum officiis.
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a role="button" type="button" class="comman_btn  w-fit" data-bs-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/vendor/jquery.min.js"></script>
+        <script src="assets/js/sidebar.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/owl/owl.carousel.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.sub-btn').click(function () {
+                    $(this).next('.sub-menu').slideToggle();
+                    $(this).find('.dropdown').toggleClass('rotate');
+                });
+                $('.menu-btn').click(function () {
+                    $('.side-bar').addClass('active');
+                    $('.menu-btn').css("visibility", "hidden");
+                });
+                $('.close-btn').click(function () {
+                    $('.side-bar').removeClass('active');
+                    $('.menu-btn').css("visibility", "visible");
+                });
+            });
+
+        </script>
+
+
+    </body>
+
+</html>
