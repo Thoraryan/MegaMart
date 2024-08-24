@@ -87,6 +87,10 @@
                         <span><i class="fa-solid fa-bag-shopping"></i></span>
                         Category Management
                     </a>
+                    <a class="sidebar-link" href="Product.html">
+                        <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
+                        Products Management
+                    </a>
                     <a class="sidebar-link" href="Filter_management.html">
                         <span><i class="fa-solid fa-filter"></i></span>
                         Filter Management
@@ -94,10 +98,6 @@
                     <a class="sidebar-link" href="survey_management.html">
                         <span><i class="fa-solid fa-fire-flame-curved"></i></span>
                         Survey Management
-                    </a>
-                    <a class="sidebar-link" href="Product.html">
-                        <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
-                        Products Management
                     </a>
                     <a class="sidebar-link" href="loyalty_program_management.html">
                         <span><i class="fa fa-map-marked"></i></span>
@@ -177,6 +177,16 @@
                             <a role="button" class="comman_btn w-fit cursor-pointer openCategoryBtn">
                                 <i class="fa fa-plus"></i>
                                 Add Sub Sub Category
+                            </a>
+                            <a role="button" class="comman_btn w-fit cursor-pointer" data-bs-toggle="modal"
+                                data-bs-target="#AddAttrributesModal">
+                                <i class="fa fa-plus"></i>
+                                Add Attributes
+                            </a>
+                            <a role="button" class="comman_btn w-fit cursor-pointer" data-bs-toggle="modal"
+                                data-bs-target="#AddValuesModal">
+                                <i class="fa fa-plus"></i>
+                                Add Values
                             </a>
                         </div>
                         <div class="col-md-12">
@@ -345,15 +355,17 @@
                         <div class="form mt-4">
                             <div class="">
                                 <div class="">
-                                    <div class="image-upload-wrapper h-100">
-                                        <label for="input-file" id="drop-area"
-                                            class="py-0 px-2 bg-white rounded-3 h-100">
-                                            <input type="file" accept="image/*" id="input-file" hidden>
-                                            <div id="img-view" class="py-4 px-4 rounded-3 h-100">
-                                                <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
-                                                <p class="fs-6 fw-light">upload image</p>
-                                            </div>
-                                        </label>
+                                    <div class="col-md-6">
+                                        <div class="image-upload-wrapper w-100">
+                                            <label class="drop-area w-100 py-2 px-2 bg-white rounded-3">
+                                                <input type="file" accept="image/*" hidden>
+                                                <div class="img-view py-4 px-4 rounded-3 w-100">
+                                                    <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                    <p class="fs-6 fw-light">upload
+                                                        image</p>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="mt-4 form-design">
@@ -403,15 +415,17 @@
                         <div class="form mt-4">
                             <div class="">
                                 <div class="">
-                                    <div class="image-upload-wrapper h-100">
-                                        <label for="input-file" id="drop-area"
-                                            class="py-0 px-2 bg-white rounded-3 h-100">
-                                            <input type="file" accept="image/*" id="input-file" hidden>
-                                            <div id="img-view" class="py-4 px-4 rounded-3 h-100">
-                                                <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
-                                                <p class="fs-6 fw-light">upload image</p>
-                                            </div>
-                                        </label>
+                                    <div class="col-md-6">
+                                        <div class="image-upload-wrapper w-100">
+                                            <label class="drop-area w-100 py-2 px-2 bg-white rounded-3">
+                                                <input type="file" accept="image/*" hidden>
+                                                <div class="img-view py-4 px-4 rounded-3 w-100">
+                                                    <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                    <p class="fs-6 fw-light">upload
+                                                        image</p>
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="mt-4 form-design">
@@ -476,15 +490,17 @@
                                     <div class="form mt-4">
                                         <div class="">
                                             <div class="">
-                                                <div class="image-upload-wrapper h-100">
-                                                    <label for="input-file" id="drop-area"
-                                                        class="py-0 px-2 bg-white rounded-3 h-100">
-                                                        <input type="file" accept="image/*" id="input-file" hidden>
-                                                        <div id="img-view" class="py-4 px-4 rounded-3 h-100">
-                                                            <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
-                                                            <p class="fs-6 fw-light">upload image</p>
-                                                        </div>
-                                                    </label>
+                                                <div class="col-md-6">
+                                                    <div class="image-upload-wrapper w-100">
+                                                        <label class="drop-area w-100 py-2 px-2 bg-white rounded-3">
+                                                            <input type="file" accept="image/*" hidden>
+                                                            <div class="img-view py-4 px-4 rounded-3 w-100">
+                                                                <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                                <p class="fs-6 fw-light">upload
+                                                                    image</p>
+                                                            </div>
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="mt-4 form-design">
@@ -565,14 +581,14 @@
                                 <form id="AddCategoryForm">
                                     <div class="form mt-4">
                                         <div class="">
-                                            <div class="">
-                                                <div class="image-upload-wrapper h-100">
-                                                    <label for="input-file" id="drop-area"
-                                                        class="py-0 px-2 bg-white rounded-3 h-100">
-                                                        <input type="file" accept="image/*" id="input-file" hidden>
-                                                        <div id="img-view" class="py-4 px-4 rounded-3 h-100">
+                                            <div class="col-md-6">
+                                                <div class="image-upload-wrapper w-100">
+                                                    <label class="drop-area w-100 py-2 px-2 bg-white rounded-3">
+                                                        <input type="file" accept="image/*" hidden>
+                                                        <div class="img-view py-4 px-4 rounded-3 w-100">
                                                             <i class="fa-solid fa-cloud-arrow-up mb-1"></i>
-                                                            <p class="fs-6 fw-light">upload image</p>
+                                                            <p class="fs-6 fw-light">upload
+                                                                image</p>
                                                         </div>
                                                     </label>
                                                 </div>
@@ -664,6 +680,194 @@
             </div>
         </div>
 
+
+        <!-- Add Attributes -->
+        <div class="modal fade main_modal" id="AddAttrributesModal" tabindex="-1"
+            aria-labelledby="AddAttrributesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class=" px-4 py-4">
+                        <div class="">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="">Add Attribute</h5>
+                                <a role="button" type="button" class="close" id="CloseAttributeForm">
+                                    <span>
+                                        <i class="fa fa-close fs-4"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="">
+                                <form id="">
+                                    <div class="form mt-4">
+                                        <div class="">
+                                            <div class="mt-4 form-design">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Select Category
+                                                            </label>
+                                                            <select name="" id="" class="form-select">
+                                                                <option value=""></option>
+                                                                <option value="">Electronic</option>
+                                                                <option value="">Bath & Shower</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Select Sub Category
+                                                            </label>
+                                                            <select name="" id="" class="form-select">
+                                                                <option value=""></option>
+                                                                <option value="">Electronic</option>
+                                                                <option value="">Bath & Shower</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Select Sub Sub Category
+                                                            </label>
+                                                            <select name="" id="" class="form-select">
+                                                                <option value=""></option>
+                                                                <option value="">Electronic</option>
+                                                                <option value="">Bath & Shower</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Enter Attribute Name (En)*
+                                                            </label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Enter Attribute Name (Ar)*
+                                                            </label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <a class="comman_btn py-2">Add Attribute</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Value -->
+        <div class="modal fade main_modal" id="AddValuesModal" tabindex="-1" aria-labelledby="AddValuesModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class=" px-4 py-4">
+                        <div class="">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="">Add Attribute</h5>
+                                <a role="button" type="button" class="close" id="CloseAttributeForm">
+                                    <span>
+                                        <i class="fa fa-close fs-4"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="">
+                                <form id="">
+                                    <div class="form mt-4">
+                                        <div class="">
+                                            <div class="mt-4 form-design">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Select Category
+                                                            </label>
+                                                            <select name="" id="" class="form-select">
+                                                                <option value=""></option>
+                                                                <option value="">Electronic</option>
+                                                                <option value="">Bath & Shower</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Select Sub Category
+                                                            </label>
+                                                            <select name="" id="" class="form-select">
+                                                                <option value=""></option>
+                                                                <option value="">Electronic</option>
+                                                                <option value="">Bath & Shower</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Select Sub Sub Category
+                                                            </label>
+                                                            <select name="" id="" class="form-select">
+                                                                <option value=""></option>
+                                                                <option value="">Electronic</option>
+                                                                <option value="">Bath & Shower</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Enter Attribute Name (En)*
+                                                            </label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for=""
+                                                                class="text-sm text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                Enter Attribute Name (Ar)*
+                                                            </label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <a class="comman_btn py-2">Add Value</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <script src="assets/vendor/jquery.min.js"></script>
         <script src="assets/js/sidebar.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -673,6 +877,24 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="assets/js/bootstrap.js"></script>
+        <script>
+            document.querySelectorAll('.drop-area input[type="file"]').forEach(function (inputElement) {
+                inputElement.addEventListener('change', function () {
+                    const file = this.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            const imgView = inputElement.nextElementSibling;
+                            imgView.style.backgroundImage = `url(${e.target.result})`;
+                            imgView.classList.add('has-image');
+                        }
+
+                        reader.readAsDataURL(file);
+                    }
+                });
+            });
+        </script>
     </body>
 
 </html>

@@ -87,6 +87,10 @@
                         <span><i class="fa-solid fa-bag-shopping"></i></span>
                         Category Management
                     </a>
+                    <a class="sidebar-link" href="Product.html">
+                        <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
+                        Products Management
+                    </a>
                     <a class="sidebar-link" href="Filter_management.html">
                         <span><i class="fa-solid fa-filter"></i></span>
                         Filter Management
@@ -94,10 +98,6 @@
                     <a class="sidebar-link" href="survey_management.html">
                         <span><i class="fa-solid fa-fire-flame-curved"></i></span>
                         Survey Management
-                    </a>
-                    <a class="sidebar-link" href="Product.html">
-                        <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
-                        Products Management
                     </a>
                     <a class="sidebar-link" href="loyalty_program_management.html">
                         <span><i class="fa fa-map-marked"></i></span>
@@ -231,18 +231,18 @@
                                             <form>
                                                 <div class="form">
                                                     <div class="">
-                                                        <div class="">
-                                                            <div class="row form-design">
+                                                        <div class="form-design">
+                                                            <div class="row ">
                                                                 <div class="col-md-12">
-                                                                    <div class="row">
-                                                                        <div class="col-md-3">
+                                                                    <div class="d-flex flex-wrap">
+                                                                        <div class="custom-img-width">
                                                                             <div class="image-upload-wrapper w-100">
-                                                                                <label for="input-file" id="drop-area"
-                                                                                    class="w-100 py-2 px-2 bg-white rounded-3">
+                                                                                <label
+                                                                                    class="drop-area w-100 py-2 px-2 bg-white rounded-3">
                                                                                     <input type="file" accept="image/*"
-                                                                                        id="input-file" hidden>
-                                                                                    <div id="img-view"
-                                                                                        class="py-4 px-4 rounded-3 w-100">
+                                                                                        hidden>
+                                                                                    <div
+                                                                                        class="img-view py-4 px-4 rounded-3 w-100">
                                                                                         <i
                                                                                             class="fa-solid fa-cloud-arrow-up mb-1"></i>
                                                                                         <p class="fs-6 fw-light">upload
@@ -251,22 +251,97 @@
                                                                                 </label>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-md-3">
+                                                                        <div class="custom-img-width">
                                                                             <div class="position-relative add-image">
                                                                                 <div class="image-upload-wrapper w-100">
-                                                                                    <label for="input-file"
-                                                                                        id="drop-area"
-                                                                                        class="w-100 py-2 px-2 bg-white rounded-3">
+                                                                                    <label
+                                                                                        class="drop-area w-100 py-2 px-2 bg-white rounded-3">
                                                                                         <input type="file"
-                                                                                            id="input-file" hidden>
-                                                                                        <div id="img-view"
-                                                                                            class="py-4 px-4 rounded-3 w-100">
+                                                                                            accept="image/*" hidden>
+                                                                                        <div
+                                                                                            class="img-view py-4 px-4 rounded-3 w-100">
                                                                                             <i
                                                                                                 class="fa-solid fa-cloud-arrow-up mb-1"></i>
                                                                                             <p class="fs-6 fw-light">
                                                                                                 upload image</p>
                                                                                             <button
                                                                                                 class="py-0 px-1 add-icon mb-0"
+                                                                                                type="button"
+                                                                                                onclick="add_image(this)">
+                                                                                                <i
+                                                                                                    class="fa-solid fa-plus fw-bold fs-4"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="custom-img-width">
+                                                                            <div class="position-relative add-image">
+                                                                                <div class="image-upload-wrapper w-100">
+                                                                                    <label
+                                                                                        class="drop-area w-100 py-2 px-2 bg-white rounded-3">
+                                                                                        <input type="file"
+                                                                                            accept="image/*" hidden>
+                                                                                        <div
+                                                                                            class="img-view py-4 px-4 rounded-3 w-100">
+                                                                                            <i
+                                                                                                class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                                                            <p class="fs-6 fw-light">
+                                                                                                upload image</p>
+                                                                                            <button
+                                                                                                class="py-0 px-1 add-icon mb-0"
+                                                                                                type="button"
+                                                                                                onclick="add_image(this)">
+                                                                                                <i
+                                                                                                    class="fa-solid fa-plus fw-bold fs-4"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="custom-img-width">
+                                                                            <div class="position-relative add-image">
+                                                                                <div class="image-upload-wrapper w-100">
+                                                                                    <label
+                                                                                        class="drop-area w-100 py-2 px-2 bg-white rounded-3">
+                                                                                        <input type="file"
+                                                                                            accept="image/*" hidden>
+                                                                                        <div
+                                                                                            class="img-view py-4 px-4 rounded-3 w-100">
+                                                                                            <i
+                                                                                                class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                                                            <p class="fs-6 fw-light">
+                                                                                                upload image</p>
+                                                                                            <button
+                                                                                                class="py-0 px-1 add-icon mb-0"
+                                                                                                type="button"
+                                                                                                onclick="add_image(this)">
+                                                                                                <i
+                                                                                                    class="fa-solid fa-plus fw-bold fs-4"></i>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="custom-img-width">
+                                                                            <div class="position-relative add-image">
+                                                                                <div class="image-upload-wrapper w-100">
+                                                                                    <label
+                                                                                        class="drop-area w-100 py-2 px-2 bg-white rounded-3">
+                                                                                        <input type="file"
+                                                                                            accept="image/*" hidden>
+                                                                                        <div
+                                                                                            class="img-view py-4 px-4 rounded-3 w-100">
+                                                                                            <i
+                                                                                                class="fa-solid fa-cloud-arrow-up mb-1"></i>
+                                                                                            <p class="fs-6 fw-light">
+                                                                                                upload image</p>
+                                                                                            <button
+                                                                                                class="py-0 px-1 add-icon mb-0"
+                                                                                                type="button"
                                                                                                 onclick="add_image(this)">
                                                                                                 <i
                                                                                                     class="fa-solid fa-plus fw-bold fs-4"></i>
@@ -310,23 +385,14 @@
                                                                         <div class="col-md-6 form-group">
                                                                             <label for=""
                                                                                 class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
-                                                                                Product Price
+                                                                                Currency
                                                                             </label>
-                                                                            <input type="text" class="form-control"
-                                                                                placeholder="Price">
+                                                                            <select name="" id="" class="form-select">
+                                                                                <option value="">SAR</option>
+                                                                                <option value="">AED</option>
+                                                                                <option value="">USA</option>
+                                                                            </select>
                                                                         </div>
-                                                                        <div class="col-md-6 form-group">
-                                                                            <label for=""
-                                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
-                                                                                Product Discount
-                                                                            </label>
-                                                                            <input type="text" class="form-control"
-                                                                                placeholder="Discount">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-12">
-                                                                    <div class="row">
                                                                         <div class="col-md-6 form-group">
                                                                             <label for=""
                                                                                 class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
@@ -346,6 +412,10 @@
                                                                                 </select>
                                                                             </div>
                                                                         </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="row">
                                                                         <div class="col-md-6 form-group">
                                                                             <label for=""
                                                                                 class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
@@ -387,34 +457,59 @@
                                                                         <div class="col-md-6 form-group">
                                                                             <label for=""
                                                                                 class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
-                                                                                Add date
+                                                                                Origin
                                                                             </label>
                                                                             <div>
-                                                                                <input type="date" class="form-control">
+                                                                                <select class="form-select" name=""
+                                                                                    id="">
+                                                                                    <option value="">USA</option>
+                                                                                    <option value="">India</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 form-group h-100">
+                                                                            <div class=""></div>
+                                                                            <label for=""
+                                                                                class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                                make live
+                                                                            </label>
+                                                                            <div class="form-check form-switch mt-2">
+                                                                                <input class="form-check-input"
+                                                                                    type="checkbox"
+                                                                                    id="flexSwitchCheckChecked"
+                                                                                    checked="">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexSwitchCheckChecked"></label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-12 form-group">
-                                                                    <label for=""
-                                                                        class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
-                                                                        Product Discription
-                                                                    </label>
-                                                                    <textarea name="" id="" class="form-control "
-                                                                        rows="4"> </textarea>
-                                                                </div>
-
-                                                                <div class="mt-3">
-                                                                    <a class="comman_btn cursor-pointer "
-                                                                        role="button">Add
-                                                                        Product</a>
-                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 form-group">
+                                                                <label for=""
+                                                                    class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                    Product Discription <small>(English)</small>
+                                                                </label>
+                                                                <textarea name="" id="" class="form-control"
+                                                                    rows="2"> </textarea>
+                                                            </div>
+                                                            <div class="col-md-12 form-group mt-2">
+                                                                <label for=""
+                                                                    class="fs-6 text-dark text-capitalize fw-light pb-1 mb-1">
+                                                                    Product Discription <small>(Arabic)</small>
+                                                                </label>
+                                                                <textarea name="" id="" class="form-control "
+                                                                    rows="2"> </textarea>
+                                                            </div>
+                                                            <div class="mt-3">
+                                                                <a class="comman_btn cursor-pointer " role="button">Add
+                                                                    Product</a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </form>
                                         </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -422,6 +517,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         </div>
 
@@ -435,6 +531,24 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="assets/js/bootstrap.js"></script>
+        <script>
+            document.querySelectorAll('.drop-area input[type="file"]').forEach(function (inputElement) {
+                inputElement.addEventListener('change', function () {
+                    const file = this.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            const imgView = inputElement.nextElementSibling;
+                            imgView.style.backgroundImage = `url(${e.target.result})`;
+                            imgView.classList.add('has-image');
+                        }
+
+                        reader.readAsDataURL(file);
+                    }
+                });
+            });
+        </script>
     </body>
 
 </html>

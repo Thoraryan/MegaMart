@@ -52,7 +52,8 @@ function sideBarToggle() {
     }
 }
 function add_image(element) {
-    $(element).addClass('d-none')
+    event.preventDefault();
+    $(element).addClass('d-none');
 }
 $(document).ready(function () {
     $('.view-order-btn').on('click', function () {
@@ -123,4 +124,19 @@ $(document).ready(function () {
         }, 300);
     });
 });
+document.querySelectorAll('.drop-area input[type="file"]').forEach(function (inputElement) {
+    inputElement.addEventListener('change', function () {
+        const file = this.files[0];
+        if (file) {
+            const reader = new FileReader();
 
+            reader.onload = function (e) {
+                const imgView = inputElement.nextElementSibling;
+                imgView.style.backgroundImage = `url(${e.target.result})`;
+                imgView.classList.add('has-image');
+            }
+
+            reader.readAsDataURL(file);
+        }
+    });
+});

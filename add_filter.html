@@ -20,6 +20,8 @@
         <link href="assets/css/style.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+
+
     </head>
 
     <body>
@@ -91,13 +93,13 @@
                         <span><i class="fa-solid fa-filter"></i></span>
                         Filter Management
                     </a>
-                    <a class="sidebar-link" href="survey_management.html">
-                        <span><i class="fa-solid fa-fire-flame-curved"></i></span>
-                        Survey Management
-                    </a>
                     <a class="sidebar-link" href="Product.html">
                         <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
                         Products Management
+                    </a>
+                    <a class="sidebar-link" href="survey_management.html">
+                        <span><i class="fa-solid fa-fire-flame-curved"></i></span>
+                        Survey Management
                     </a>
                     <a class="sidebar-link" href="loyalty_program_management.html">
                         <span><i class="fa fa-map-marked"></i></span>
@@ -378,7 +380,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="mt-4">
+                                                <div class="mt-4 col-3 mx-auto">
                                                     <a class="comman_btn py-2">Add Filter</a>
                                                 </div>
                                             </div>
@@ -393,7 +395,6 @@
         </div>
         </div>
 
-
         <script src="assets/vendor/jquery.min.js"></script>
         <script src="assets/js/sidebar.js"></script>
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -403,6 +404,80 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="assets/js/bootstrap.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const selectBox = document.getElementById("selectBox");
+                const optionsContainer = document.getElementById("optionsContainer");
+                const selectedOptions = document.getElementById("selectedOptions");
+
+                // Toggle dropdown visibility
+                selectBox.addEventListener("click", function () {
+                    optionsContainer.style.display = optionsContainer.style.display === "block" ? "none" : "block";
+                });
+
+                // Update selected options when a checkbox is clicked
+                optionsContainer.querySelectorAll("input[type='checkbox']").forEach(function (checkbox) {
+                    checkbox.addEventListener("change", function () {
+                        updateSelectedOptions();
+                    });
+                });
+
+                // Update the display of selected options
+                function updateSelectedOptions() {
+                    const selected = [];
+                    selectedOptions.innerHTML = "";
+
+                    optionsContainer.querySelectorAll("input[type='checkbox']:checked").forEach(function (checkbox) {
+                        const value = checkbox.value;
+                        selected.push(value);
+
+                        const optionTag = document.createElement("span");
+                        optionTag.textContent = value;
+
+                        const removeBtn = document.createElement("span");
+                        removeBtn.textContent = "x";
+                        removeBtn.className = "remove";
+
+                        removeBtn.addEventListener("click", function () {
+                            checkbox.checked = false;
+                            updateSelectedOptions();
+                        });
+
+                        optionTag.appendChild(removeBtn);
+                        selectedOptions.appendChild(optionTag);
+                    });
+
+                    if (selected.length === 0) {
+                        selectedOptions.textContent = "Select options";
+                    }
+                }
+
+                // Close dropdown if clicked outside
+                document.addEventListener("click", function (e) {
+                    if (!selectBox.contains(e.target)) {
+                        optionsContainer.style.display = "none";
+                    }
+                });
+            });
+
+
+            document.querySelectorAll('.drop-area input[type="file"]').forEach(function (inputElement) {
+                inputElement.addEventListener('change', function () {
+                    const file = this.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            const imgView = inputElement.nextElementSibling;
+                            imgView.style.backgroundImage = `url(${e.target.result})`;
+                            imgView.classList.add('has-image');
+                        }
+
+                        reader.readAsDataURL(file);
+                    }
+                });
+            });
+        </script>
     </body>
 
 </html>

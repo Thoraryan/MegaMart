@@ -88,6 +88,10 @@
                         <span><i class="fa-solid fa-bag-shopping"></i></span>
                         Category Management
                     </a>
+                    <a class="sidebar-link" href="Product.html">
+                        <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
+                        Products Management
+                    </a>
                     <a class="sidebar-link" href="Filter_management.html">
                         <span><i class="fa-solid fa-filter"></i></span>
                         Filter Management
@@ -95,10 +99,6 @@
                     <a class="sidebar-link" href="survey_management.html">
                         <span><i class="fa-solid fa-fire-flame-curved"></i></span>
                         Survey Management
-                    </a>
-                    <a class="sidebar-link" href="Product.html">
-                        <span class=""><i class="fa-solid fa-shopping-cart"></i></span>
-                        Products Management
                     </a>
                     <a class="sidebar-link" href="loyalty_program_management.html">
                         <span><i class="fa fa-map-marked"></i></span>
@@ -279,7 +279,7 @@
                                                                             class="d-flex gap-1 justify-content-center">
                                                                             <a class="Table_btn me-2"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#detailsModal">
+                                                                                data-bs-target="#viewModal">
                                                                                 <i class="fa fa-eye"></i>
                                                                             </a>
                                                                             <a class="bg-danger Table_btn">
@@ -299,7 +299,7 @@
                                                                             class="d-flex gap-1 justify-content-center">
                                                                             <a class="Table_btn me-2"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#detailsModal">
+                                                                                data-bs-target="#viewModal">
                                                                                 <i class="fa fa-eye"></i>
                                                                             </a>
                                                                             <a class="bg-danger Table_btn">
@@ -319,7 +319,7 @@
                                                                             class="d-flex gap-1 justify-content-center">
                                                                             <a class="Table_btn me-2"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#detailsModal">
+                                                                                data-bs-target="#viewModal">
                                                                                 <i class="fa fa-eye"></i>
                                                                             </a>
                                                                             <a class="bg-danger Table_btn">
@@ -339,7 +339,7 @@
                                                                             class="d-flex gap-1 justify-content-center">
                                                                             <a class="Table_btn me-2"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#detailsModal">
+                                                                                data-bs-target="#viewModal">
                                                                                 <i class="fa fa-eye"></i>
                                                                             </a>
                                                                             <a class="bg-danger Table_btn">
@@ -385,7 +385,7 @@
                                                                         <div class=" d-flex justify-content-center">
                                                                             <a class="Table_btn me-2"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#detailsModal">
+                                                                                data-bs-target="#completedviewModal">
                                                                                 <i class="fa fa-eye"></i>
                                                                             </a>
                                                                         </div>
@@ -427,7 +427,9 @@
                                                                     <td>2023-07-12 14:30</td>
                                                                     <td>
                                                                         <div class="d-flex justify-content-center">
-                                                                            <a class="Table_btn me-2">
+                                                                            <a class="Table_btn me-2"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#cancelviewModal">
                                                                                 <i class="fa fa-eye"></i>
                                                                             </a>
                                                                         </div>
@@ -443,7 +445,7 @@
                                                                         <div class="d-flex justify-content-center">
                                                                             <a class="Table_btn me-2"
                                                                                 data-bs-toggle="modal"
-                                                                                data-bs-target="#detailsModal">
+                                                                                data-bs-target="#cancelviewModal">
                                                                                 <i class="fa fa-eye"></i>
                                                                             </a>
                                                                         </div>
@@ -466,7 +468,129 @@
 
 
 
-
+        <!-- View Survey Modal -->
+        <div class="modal fade top-25" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewSurveyModalLabel">Upcoming Orders</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Survey details content -->
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">User Name</strong>
+                            <span>
+                                Jane Doe
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Order Date & Time</strong>
+                            <span>
+                                2023-07-12 14:30
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Payment Amount</strong>
+                            <span>
+                                $99.99
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Payment Type</strong>
+                            <span class="fw-semibold">
+                                PayPal
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a role="button" type="button" class="comman_btn  w-fit" data-bs-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade top-25" id="completedviewModal" tabindex="-1" aria-labelledby="viewModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewSurveyModalLabel">Complete Order</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Survey details content -->
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">User Name</strong>
+                            <span>
+                                Jane Doe
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Order Date & Time</strong>
+                            <span>
+                                2023-07-12 14:30
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Payment Amount</strong>
+                            <span>
+                                $99.99
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Payment Type</strong>
+                            <span class="fw-semibold">
+                                PayPal
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a role="button" type="button" class="comman_btn  w-fit" data-bs-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade top-25" id="cancelviewModal" tabindex="-1" aria-labelledby="viewModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewSurveyModalLabel">Cancel Order</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Survey details content -->
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">User Name</strong>
+                            <span>
+                                Jane Doe
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Order Date & Time</strong>
+                            <span>
+                                2023-07-12 14:30
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Payment Amount</strong>
+                            <span>
+                                $99.99
+                            </span>
+                        </p>
+                        <p class="custom-view-design">
+                            <strong class="fw-semibold me-1">Payment Type</strong>
+                            <span class="fw-semibold">
+                                PayPal
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a role="button" type="button" class="comman_btn  w-fit" data-bs-dismiss="modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="assets/vendor/jquery.min.js"></script>
         <script src="assets/js/sidebar.js"></script>
